@@ -35,7 +35,7 @@ ggsurvplot(km_fit_grade,
            ggtheme = theme_minimal(),
            xlab = "Time (days)", 
            ylab = "Survival Probability",
-           legend.labs = c("Grade 1", "Grade 2", "Grade 3"))  # Modify if you have different grades
+           legend.labs = c("Grade 1", "Grade 2", "Grade 3"))
 
 # Fit Kaplan-Meier model stratified by Hormonal Therapy
 km_fit_therapy <- survfit(surv_object ~ HormonalTherapy, data = breast_cancer_data)
